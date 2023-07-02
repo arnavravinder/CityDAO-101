@@ -1,6 +1,6 @@
 # CityDAO 101
 
-Visit the CityDAO 101 website: [CityDAO 101.web.app](https://citydao101.web.app)
+Visit the CityDAO 101 website: [citydao101.web.app](https://citydao101.web.app)
 
 ## Objective
 The objective of this project is to develop a user-friendly website that facilitates community engagement, provides information, and encourages active participation of newcomers and beginners in the CityDAO ecosystem. The website aims to inform users about CityDAO, recruit interested individuals, and provide accurate and accessible information to help citizens make informed decisions during voting processes. By creating an inclusive and informative platform, the project seeks to foster innovation and improve the quality of proposals within CityDAO. 🌐✨
