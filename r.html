@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Resources Page</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Playfair+Display&display=swap');
+
+    body {
+      font-family: "Roc Grotesk Medium", sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+    }
+
+    header {
+      background-color: #008c64;
+      color: #ffffff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 0;
+      padding: 0.5rem 0;
+    }
+
+    a {
+      color: #00ffa8;
+      text-decoration: none;
+    }
+
+    button {
+      background-color: #00ffa8;
+      color: #000000;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button.outline {
+      background-color: #000000;
+      color: #00ffa8;
+      border: 2px solid #00ffa8;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000000;
+      font-family: 'Comfortaa', sans-serif;
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin-right: 20px;
+      font-family: 'Comfortaa', sans-serif;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000000;
+      z-index: 9999;
+    }
+
+    .loading-text {
+      font-size: 24px;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .loading-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #00ffa8;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar start -->
+  <div class="navbar">
+    <div class="logo">
+      <h2>CityDAO 101</h2>
+    </div>
+    <div class="navbar-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About CityDAO</a>
+      <a href="abd.html">About the Project</a>
+      <a href="https://snapshot.org/#/daocity.eth">Voting</a>
+      <a href="r.html">Resources</a>
+    </div>
+  </div>
+  <!-- Navbar end -->
+
+  <header>
+    <h1>Resources Page</h1>
+    <p>A collection of articles and links for your reference.</p>
+  </header>
+
+  <!-- Loading screen start -->
+  <div class="loading-screen">
+    <div class="loading-text">Loading...</div>
+    <div class="loading-image"></div>
+  </div>
+  <!-- Loading screen end -->
+
+  <main>
+    <section>
+      <h2>Videos</h2>
+      <ul>
+        <li><a href="https://youtu.be/ns88NvDiHLk" target="_blank">The Journey of CityDAO</a></li>
+        <li><a href="https://youtu.be/mUnHD3SHgTk" target="_blank">CityDAO - Building a Web3 City of the Future</a></li>
+        <li><a href="https://youtu.be/8jFvIpwmfqM" target="_blank">The State of the Nation - by CityDAO</a></li>
+        <li><a href="https://youtu.be/WlZFqgHZzMM" target="_blank">CityDAO Academic Conference - Day 1 Panel 1 - The Web3 College Town</a></li>
+        <li><a href="https://youtu.be/PgtMyLBtCfU" target="_blank">CityDAO Academic Conference - Day 1 Panel 2 - DeSci</a></li>
+        <li><a href="https://youtu.be/6-Q-0rhO9Mw" target="_blank">CityDAO Academic Conference - Day 1 Panel 3 - Funding Web3 Education</a></li>
+        <li><a href="https://youtu.be/kUayguM10AI" target="_blank">CityDAO Interview with Wyoming State and DAO Bill-38 Senator Chris Rothfuss</a></li>
+        <li><a href="https://youtu.be/TZUTp1qNKJg" target="_blank">How and Where To Buy CityDAO Citizenship NFTs - Detailed Guide</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Articles</h2>
+      <ul>
+        <li><a href="https://blog.liquid.com/city-dao" target="_blank">CityDAO - Why is Nobody Talking about this Blockchain on Land?</a></li>
+        <li><a href="https://daotimes.com/the-story-of-citydao-explain-through-timeline/" target="_blank">The timeline of CityDAO's mission to create a decentralized city with blockchain</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Useful Links</h2>
+      <ul>
+        <li><a href="https://golden.com/wiki/CityDAO-PBVYM8E" target="_blank">CityDAO Wiki</a></li>
+        <li><a href="https://www.ibm.com/topics/blockchain" target="_blank">What is Blockchain [IBM]</a></li>
+        <li><a href="https://online.stanford.edu/how-does-blockchain-work" target="_blank">How does blockchain work [Stanford]</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    // Hide the loading screen after the page has loaded
+    window.addEventListener('load', function () {
+      var loadingScreen = document.querySelector('.loading-screen');
+      loadingScreen.style.display = 'none';
+    });
+  </script>
+
+</body>
+
+</html>

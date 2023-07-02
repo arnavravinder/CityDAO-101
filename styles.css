@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  font-family: "Font Name", sans-serif;
+  color: #ffffff;
+}
+
+.navbar a {
+  color: #ffffff;
+}
+
+.navbar a.active {
+  color: #ffff00;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+}
+
+.button-filled {
+  background-color: #00ffa8;
+  color: #000000;
+}
+
+.button-unfilled {
+  background-color: #000000;
+  color: #00ffa8;
+  border: 2px solid #00ffa8;
+}

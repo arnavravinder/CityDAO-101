@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About CityDAO</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000000;
+      font-family: "Comfortaa", sans-serif;
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin-right: 20px;
+      font-family: "Comfortaa", sans-serif;
+    }
+
+    .content-container {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .content-container h1 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .content-container h1::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #00cc66;
+      bottom: -5px;
+      left: 0;
+      transform: scaleX(1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .content-container p {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+    }
+
+    .accent-link {
+      color: #003399;
+      font-weight: bold;
+    }
+
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("irina-iriser-rhRlzHJcv5w-unsplash.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      z-index: 9999;
+    }
+
+    .loading-overlay h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 0;
+      position: relative;
+      color: white;
+      font-family: "Comfortaa", sans-serif;
+    }
+
+    .loading-overlay h1::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #00cc66;
+      bottom: -5px;
+      left: 0;
+      transform: translateX(-100%);
+      animation: underlineMove 1.2s ease-in-out forwards;
+    }
+
+    @keyframes underlineMove {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .loading-text {
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .page-container {
+      display: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar start -->
+  <div class="navbar">
+    <div class="logo">
+      <h2>CityDAO 101</h2>
+    </div>
+    <div class="navbar-links">
+      <a href="home.html">Home</a>
+      <a href="aboutcitydao.html">About CityDAO</a>
+      <a href="about.html">About the Project</a>
+      <a href="redirect.html">Voting</a>
+      <a href="r.html">Resources</a>
+    </div>
+  </div>
+  <!-- Navbar end -->
+
+  <div class="loading-overlay">
+    <h1>CityDAO 101</h1>
+    <div class="loading-text">Please wait while the page loads</div>
+  </div>
+
+  <div class="page-container">
+    <!-- About CityDAO page start -->
+    <div class="background-image"></div>
+    <div class="content-container">
+      <h1>About CityDAO</h1>
+      <p>
+        CityDAO is an organization that is exploring decentralized asset ownership on chain, starting with a 40-acre parcel
+        of land in Wyoming. The land is represented as an NFT on the blockchain, and Citizen NFT holders are citizens of
+        CityDAO, granting community access and governance. CityDAO aims to create a decentralized city governed by citizens
+        through a DAO, working towards a more democratic society despite challenges.
+      </p>
+    </div>
+    <!-- About CityDAO page end -->
+  </div>
+
+  <script>
+    window.addEventListener("load", function () {
+      const loadingOverlay = document.querySelector(".loading-overlay");
+      const pageContainer = document.querySelector(".page-container");
+
+      setTimeout(function () {
+        loadingOverlay.style.display = "none";
+        pageContainer.style.display = "block";
+      }, 1200);
+    });
+  </script>
+</body>
+
+</html>
